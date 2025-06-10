@@ -1,9 +1,10 @@
+<!-- <template></template> -->
 <template>
   <section class="bg-green-50">
     <div class="container ma-auto max-w-2xl py-24">
       <div class="bg-white px-6 py-8 mb-4 shadow-md rounded-md border ma-4 md:m-0">
         <form @submit.prevent="handleSubmit">
-          <h2 class="text-3xl text-center font-semibold mb-6">Add Job</h2>
+          <h2 class="text-3xl text-center font-semibold mb-6">Edit Job</h2>
 
           <div class="mb-4">
             <label for="type" class="block text-gray-700 font-bold mb-2">Job Type</label>
@@ -142,7 +143,7 @@
               class="bg-green hover:bg-green-600 text-white font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline"
               type="submit"
             >
-              Add Job
+              Update Job
             </button>
           </div>
         </form>
@@ -152,9 +153,10 @@
 </template>
 
 <script setup>
-import { reactive } from 'vue'
+import { reactive, onMounted } from 'vue'
 import axios from 'axios'
 import router from '@/router'
+import { useRoute } from 'vue-router'
 import { useToast } from 'vue-toastification'
 
 const form = reactive({
@@ -171,10 +173,18 @@ const form = reactive({
   },
 })
 
+const route = useRoute()
 const toast = useToast()
 
+const jobId = route.params.id
+
+const state = reactive({
+  job: {},
+  isLoading: true,
+})
+
 const handleSubmit = async () => {
-  const newJob = {
+  const updatedJob = {
     type: form.type,
     title: form.title,
     description: form.description,
@@ -189,7 +199,7 @@ const handleSubmit = async () => {
   }
 
   try {
-    const response = await axios.post('/api/jobs', newJob)
+    const response = await axios.put(`/api/jobs/${jobId}`, updatedJob)
     toast.success('Job Added Successfully')
     router.push(`/jobs/${response.data.id}`)
   } catch (error) {
@@ -197,4 +207,25 @@ const handleSubmit = async () => {
     toast.error('Job Was Not Added')
   }
 }
+
+onMounted(async () => {
+  try {
+    const response = await axios.get(`/api/jobs/${jobId}`)
+    state.job = response.data
+    // Populate inputs
+    form.type = state.job.type
+    form.title = state.job.title
+    form.description = state.job.description
+    form.salary = state.job.salary
+    form.location = state.job.location
+    form.company.name = state.job.company.name
+    form.company.description = state.job.company.description
+    form.company.contactEmail = state.job.company.contactEmail
+    form.company.contactPhone = state.job.company.contactPhone
+  } catch (error) {
+    console.log('Error fetching data', error)
+  } finally {
+    state.isLoading = false
+  }
+})
 </script>

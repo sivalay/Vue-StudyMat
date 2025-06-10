@@ -47,8 +47,10 @@ const state = reactive({
 
 onMounted(async () => {
   try {
+    console.log(state.jobs)
     const response = await axios.get('/api/jobs')
     // jobs.value = response.data
+    console.log(response)
     state.jobs = response.data
   } catch (error) {
     console.log('error fetching jobs', error)
@@ -56,4 +58,16 @@ onMounted(async () => {
     state.isLoading = false
   }
 })
+// onMounted(async () => {
+//   try {
+//     const response = await fetch(`/api/jobs`)
+//     // jobs.value = response.data
+//     const data = await response.json()
+//     state.jobs = data
+//   } catch (error) {
+//     console.log('error fetching job', error)
+//   } finally {
+//     state.isLoading = false
+//   }
+// })
 </script>

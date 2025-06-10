@@ -85,46 +85,18 @@
       }
     },
     {
-      "id": "2131",
       "type": "Full-Time",
-      "title": "s;ldkjpowe",
-      "description": ";lsdkpopwq",
-      "salary": "$70K - $80K",
-      "location": "ksdljoi",
-      "company": {
-        "name": "lksdjpoi",
-        "description": "pqwoipeqd",
-        "contactEmail": "sdew@gmail.com",
-        "contactPhone": "powqi["
-      }
-    },
-    {
-      "id": "e33c",
-      "type": "Full-Time",
-      "title": "lksjdoi",
-      "description": "laksjopqwpoi",
-      "salary": "$70K - $80K",
-      "location": "lksjpqwoi",
-      "company": {
-        "name": "s,dmnlwo",
-        "description": "askpqwoip",
-        "contactEmail": "sdew@gmail.com",
-        "contactPhone": "1928237777"
-      }
-    },
-    {
-      "id": "2ac6",
-      "type": "Full-Time",
-      "title": "Software Engineer",
+      "title": "Software Dev",
       "description": "Python Developer",
-      "salary": "$80K - $90K",
+      "salary": "$90K - $100K",
       "location": "Eranakulam,Kerala",
       "company": {
         "name": "Saswap LTd",
         "description": "jhdoiwepoupweu",
         "contactEmail": "sdew@gmail.com",
         "contactPhone": "1928237777"
-      }
+      },
+      "id": "2ac6"
     }
   ]
 }
