@@ -58,6 +58,7 @@ onMounted(async () => {
     state.isLoading = false
   }
 })
+console.log(state.jobs)
 // onMounted(async () => {
 //   try {
 //     const response = await fetch(`/api/jobs`)
