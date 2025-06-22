@@ -234,3 +234,117 @@ main {
   margin-left: 10px;
   cursor: pointer;
 } -->
+
+
+
+<!-- editView -->
+ <!-- <form @submit.prevent="handleSubmit" class="edit-view-wrapper__form">
+      <div class="edit-view-wrapper__heading">Edit Employee</div>
+      <div class="edit-view-wrapper__input-wrapper">
+        <label for="name">
+          Name :
+          <input
+            v-model="form.name"
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your Name"
+          />
+        </label>
+        <label for="address">
+          Address :
+          <input
+            v-model="form.address"
+            type="text"
+            id="address"
+            name="address"
+            placeholder="Enter your Address"
+          />
+        </label>
+        <label for="designation">
+          Designation :
+          <input
+            v-model="form.designation"
+            type="text"
+            id="designation"
+            name="designation"
+            placeholder="Enter Designation"
+          />
+        </label>
+      </div>
+      <div class="edit-view-wrapper__button-container">
+        <button>Edit Employee</button>
+      </div>
+    </form> -->
+
+    <!-- // &__form {
+      //   display: flex;
+      //   flex-flow: column;
+      // }
+    
+      // &__input-wrapper {
+      //   display: flex;
+      //   flex-flow: column;
+      //   gap: 20px;
+      //   align-items: left;
+      //   justify-content: center;
+      //   padding: 20px 0 40px;
+      // }
+    
+      // &__button-container {
+      //   display: flex;
+      //   align-items: center;
+      //   justify-content: flex-end;
+      // }
+    
+      // &__heading {
+      //   display: block;
+      //   color: #196397;
+      //   font-weight: 600;
+      //   text-align: center;
+      //   padding: 10px;
+      // } -->
+
+
+
+
+
+    <!-- AddView -->
+     <!-- <form @submit.prevent="handleSubmit" class="add-view-wrapper__form">
+      <div class="add-view-wrapper__heading">Add Employee</div>
+      <div class="add-view-wrapper__input-wrapper">
+        <label for="name">
+          Name :
+          <input
+            v-model="form.name"
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your Name"
+          />
+        </label>
+        <label for="address">
+          Address :
+          <input
+            v-model="form.address"
+            type="text"
+            id="address"
+            name="address"
+            placeholder="Enter your Address"
+          />
+        </label>
+        <label for="designation">
+          Designation :
+          <input
+            v-model="form.designation"
+            type="text"
+            id="designation"
+            name="designation"
+            placeholder="Enter Designation"
+          />
+        </label>
+      </div>
+      <div class="add-view-wrapper__button-container">
+        <button>Add Employee</button>
+      </div>
+    </form> -->
