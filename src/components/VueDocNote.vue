@@ -118,6 +118,13 @@
         <li>:git pull</li>
       </p>
     </div>
+    <div>
+      <p>For changes in other branches</p>
+      <p>
+        <li>got to the branch where u need the other branch datas</li>
+        <li>:git pull origin branhc name</li>
+      </p>
+    </div>
   </div>
 </template>
 
