@@ -121,8 +121,10 @@
     <div>
       <p>For changes in other branches</p>
       <p>
+        <li>In the parent branch</li>
+        <li>:git pull origin branch-name</li>
         <li>got to the branch where u need the other branch datas</li>
-        <li>:git pull origin branhc name</li>
+        <li>:git merge parent-branch-name</li>
       </p>
     </div>
   </div>
