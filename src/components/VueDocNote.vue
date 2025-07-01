@@ -84,7 +84,6 @@
       </p>
     </div>
   </div>
-  <div>-------------------</div>
   <div>
     <div>
       <p>TypeScript with Composition API</p>
