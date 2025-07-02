@@ -62,6 +62,7 @@
     </div>
     <div>
       <p>Lifecylcle Hooks</p>
+      <p>----------------</p>
       <p>
         <li>Registering Lifecylcle hooks</li>
         <li>Hooks for eg: onMounted , onUpdated, and onUnMounted.</li>
@@ -75,6 +76,7 @@
     </div>
     <div>
       <p>TypeScript with Composition API</p>
+      <p>-------------------------------</p>
       <p>Overview ofTypeScript.</p>
       <p>
         <li>Typing Component Props</li>
@@ -87,6 +89,7 @@
   <div>
     <div>
       <p>TypeScript with Composition API</p>
+      <p>-------------------------------</p>
       <p>Overview ofTypeScript.</p>
       <p>
         <li>Typing Component Props</li>
