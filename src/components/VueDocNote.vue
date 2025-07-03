@@ -21,6 +21,7 @@
     </div>
     <div>
       <p>Reactivity Fundamentals</p>
+      <p>-----------------------</p>
       <p>
         <li>To Declare reactive state we use ref() Function.</li>
         <li>ref() value is accessible by using the .value</li>
@@ -30,6 +31,7 @@
     </div>
     <div>
       <p>Computed Properties</p>
+      <p>-------------------</p>
       <p>
         <li>
           To make easy to make any other functions with the data inside a reactive() functions, we
@@ -40,12 +42,14 @@
     </div>
     <div>
       <p>Class and Style Bindings</p>
+      <p>------------------------</p>
       <p>
         <li>we can have the class names with objects.</li>
       </p>
     </div>
     <div>
       <p>Components Basics</p>
+      <p>-----------------</p>
       <p>
         <li>Can import components and use it</li>
         <li>We can define props.</li>
