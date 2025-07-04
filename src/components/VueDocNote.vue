@@ -1,6 +1,7 @@
 <template>
   <div>
     <h1>Creating an Application</h1>
+    <p>-------------------------</p>
     <div>
       <p>Create a new application instance with the createApp() function.</p>
       <p>
@@ -12,6 +13,7 @@
     </div>
     <div>
       <p>Template syntax</p>
+      <p>----------------</p>
       <p>
         <li>Text Interpolation.</li>
         <li>Directives and Mustaches.</li>
