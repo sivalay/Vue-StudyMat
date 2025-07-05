@@ -6,7 +6,7 @@
       <p>Create a new application instance with the createApp() function.</p>
       <p>
         <li>The passing object in createApp() function is a Root-Component</li>
-        <li>import root component and imple</li>
+        <li>import root component and implement.</li>
         <li>An application instance won't be run anything until it's Mound() method is called.</li>
         <li>use multiple components in the root component for a better understanding.</li>
       </p>
@@ -29,6 +29,9 @@
         <li>ref() value is accessible by using the .value</li>
         <li>In template the ref() value will get automatically Uncovered.</li>
         <li>reactive() API</li>
+        <li>
+          c
+        </li>
       </p>
     </div>
     <div>
