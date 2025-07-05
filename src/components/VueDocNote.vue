@@ -29,9 +29,7 @@
         <li>ref() value is accessible by using the .value</li>
         <li>In template the ref() value will get automatically Uncovered.</li>
         <li>reactive() API</li>
-        <li>
-          c
-        </li>
+        <li>Can use the reactive() function too.</li>
       </p>
     </div>
     <div>
